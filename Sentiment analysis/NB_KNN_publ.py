@@ -6,7 +6,7 @@ import pandas as pd
 path = ''#insert your path
 df_train = pd.read_csv(path+'\\filename_traindata.csv',header=0,sep=',', encoding = 'utf-8')#insert filename training data
 df_test = pd.read_csv(path+'\\filename_testdata.csv',header=0,sep=',', encoding = 'utf-8')#insert filename test data
-df_kfold = df_test[['dutch', 'english', 'man_senti']].append(df_test[['dutch','english','man_senti']], ignore_index=True)
+
 #train classifier
 
 n = [1,2,3,4,5]
